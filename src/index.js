@@ -6,7 +6,9 @@ import React, { PureComponent } from 'react'
 class Binder extends PureComponent {
   render() {
     return (
-      <div className='binder'></div>
+      <div className='binder'>
+        {this.props.children}
+      </div>
     )
   }
 }
