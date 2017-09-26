@@ -1,16 +1,14 @@
 'use strict'
 
-import React, { PureComponent } from 'react'
-// import ReactDOM from 'react-dom'
-
-class Binder extends PureComponent {
-  render() {
-    return (
-      <div className='binder'>
-        {this.props.children}
-      </div>
-    )
-  }
-}
+import Binder from './binder'
+import Card from './card'
+import Page from './page'
+import './binder.css'
 
 export default Binder
+
+export {
+  Binder,
+  Card,
+  Page
+}

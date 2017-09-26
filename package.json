@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
     "watch": "cross-env NODE_ENV=development webpack -w",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:production": "yarn lint && cross-env NODE_ENV=production webpack -p",
@@ -14,6 +16,7 @@
     "patch": "release-it patch"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.10",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
