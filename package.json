@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/stevegood/card-binder.git",
   "scripts": {
-    "prepublish": "yarn build:production",
+    "prepublish": "yarn deploy-storybook && yarn build:production",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "watch": "cross-env NODE_ENV=development webpack -w",
