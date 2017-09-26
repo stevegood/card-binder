@@ -2,6 +2,10 @@
 
 A set of React components used to create card binders.
 
+## Demo
+
+View the [storybook](https://www.stevegood.rocks/card-binder)
+
 ## Installation
 
 To install this Component, run `yarn add card-binder` or `npm install card-binder`
