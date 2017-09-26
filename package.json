@@ -1,6 +1,6 @@
 {
   "name": "card-binder",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,10 @@
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:production": "yarn lint && cross-env NODE_ENV=production webpack -p",
     "lint": "cross-env NODE_ENV=development esw webpack.config.js src tools --color",
-    "lint:watch": "yarn lint -- --watch"
+    "lint:watch": "yarn lint -- --watch",
+    "major": "release-it major",
+    "minor": "release-it minor",
+    "patch": "release-it patch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -21,6 +24,7 @@
     "eslint-watch": "^3.1.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
+    "release-it": "^2.8.5",
     "webpack": "^3.6.0"
   },
   "peerDependencies": {
