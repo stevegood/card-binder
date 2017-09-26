@@ -14,10 +14,12 @@
     "lint:watch": "yarn lint -- --watch",
     "major": "release-it major",
     "minor": "release-it minor",
-    "patch": "release-it patch"
+    "patch": "release-it patch",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.10",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
