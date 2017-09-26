@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prepublish": "build:production",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "watch": "cross-env NODE_ENV=development webpack -w",
