@@ -6,16 +6,10 @@
 .page {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   flex: 1;
 }
 
 .card {
   margin: 6px;
-  background-color: tomato;
-  box-sizing: border-box;
-  padding: 20px;
-  outline: 2px solid blue;
-  flex: 1;
-  flex-basis: calc(25% - 12px);
+  flex-basis: 0 1 calc(25% - 12px);
 }

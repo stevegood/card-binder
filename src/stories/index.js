@@ -6,61 +6,46 @@ import Binder, { Card, Page } from '../'
 
 {
   storiesOf('Binder Pages', module)
-    .add('Single Standard Card Page', () => (
-      <Binder>
-        <Page>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+    .add('Single Standard Card Page', () => {
+      let cards = []
+      
+      for (let i=0; i < 11; i++) {
+        cards.push((
+          <Card key={i}>
+            <img src="https://github.com/guidokessels/xwing-data/raw/master/images/pilots/Rebel%20Alliance/X-wing/luke-skywalker.png" />
+          </Card>
+        ))
+      }
+      
+      return (
+        <Binder>
+          <Page>
+            {cards}
+          </Page>
+        </Binder>
+      )
+    })
+    .add('Side-by-side Standard Card Page', () => {
+      let cards = []
+      
+      for (let i=0; i < 11; i++) {
+        cards.push((
+          <Card key={i}>
+            <img src="https://github.com/guidokessels/xwing-data/raw/master/images/pilots/Rebel%20Alliance/X-wing/luke-skywalker.png" />
+          </Card>
+        ))
+      }
+      
+      return (
+        <Binder>
+          <Page>
+            {cards}
+          </Page>
           
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Page>
-      </Binder>
-    ))
-    .add('Side-by-side Standard Card Page', () => (
-      <Binder>
-        <Page>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Page>
-        
-        <Page>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Page>
-      </Binder>
-    ))
+          <Page>
+            {cards}
+          </Page>
+        </Binder>
+      )
+    })
 }

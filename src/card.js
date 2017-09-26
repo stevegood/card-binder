@@ -6,7 +6,7 @@ class Card extends PureComponent {
   render() {
     return (
       <div className='card'>
-        <h2>Card</h2>
+        {this.props.children}
       </div>
     )
   }
