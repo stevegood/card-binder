@@ -9,7 +9,7 @@ import Binder, { Card, Page } from '../'
     .add('Single Standard Card Page', () => {
       let cards = []
       
-      for (let i=0; i < 11; i++) {
+      for (let i=0; i < 12; i++) {
         cards.push((
           <Card key={i}>
             <img src="https://github.com/guidokessels/xwing-data/raw/master/images/pilots/Rebel%20Alliance/X-wing/luke-skywalker.png" />

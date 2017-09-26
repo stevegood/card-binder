@@ -4,4 +4,5 @@ webpack.config.js
 .babelrc
 .eslintrc
 .gitignore
+.storybook
 yarn.lock
